@@ -185,4 +185,68 @@ export const usersPage = (req, res) => {
 export const rolesPermissionsPage = (req, res) => {
     res.render('hr/roles-permissions');
 };
+export const expensesReportPage = (req, res) => {
+    res.render('hr/expenses-report');
+};
+export const invoiceReportPage = (req, res) => {
+    res.render('hr/invoice-report');
+};
+export const paymentReportPage = (req, res) => {
+    res.render('hr/payment-report');
+};
+export const projectReportPage = (req, res) => {
+    res.render('hr/project-report');
+};
+export const taskReportPage = (req, res) => {
+    res.render('hr/task-report');
+};
 
+export const userReportPage = (req, res) => {
+    res.render('hr/user-report');
+};
+export const leaveReportPage = (req, res) => {
+    res.render('hr/leave-report');
+};
+export const payslipReportPage = (req, res) => {
+    res.render('hr/payslip-report');
+};
+
+export const employeeReportPage = (req, res) => {
+    res.render('hr/employee-report');
+};
+
+export const profileSettingsPage = (req, res) => {
+    res.render('hr/profile-settings');
+};
+
+export const securitySettingsPage = (req, res) => {
+    res.render('hr/security-settings');
+};
+export const languageSettingsPage = (req, res) => {
+    res.render('hr/language-settings');
+};
+export const languagePage = (req, res) => {
+    res.render('hr/language');
+};
+export const salarySettingsPage = (req, res) => {
+    res.render('hr/salary-settings');
+};
+export const leaveTypePage = (req, res) => {
+    res.render('hr/leave-type');
+};
+export const paymentGatewaysPage = (req, res) => {
+    res.render('hr/payment-gateways');
+};
+export const taxRatesPage = (req, res) => {
+    res.render('hr/tax-rates');
+};
+export const profilePage = (req, res) => {
+    res.render('hr/profile');
+};
+
+export const pricingPage = (req, res) => {
+    res.render('hr/pricing');
+};
+export const comingSoonPage = (req, res) => {
+    res.render('hr/coming-soon');
+};

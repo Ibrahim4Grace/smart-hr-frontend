@@ -61,9 +61,26 @@ hrRoute.get('/knowledgebase-view', hrCtlr.knowledgebaseViewPage);
 hrRoute.get('/knowledgebase-details', hrCtlr.knowledgebaseDetailsPage);
 hrRoute.get('/users', hrCtlr.usersPage);
 hrRoute.get('/roles-permissions', hrCtlr.rolesPermissionsPage);
-
-
-
-
+hrRoute.get('/expenses-report', hrCtlr.expensesReportPage);
+hrRoute.get('/invoice-report', hrCtlr.invoiceReportPage);
+hrRoute.get('/payment-report', hrCtlr.paymentReportPage);
+hrRoute.get('/project-report', hrCtlr.projectReportPage);
+hrRoute.get('/task-report', hrCtlr.taskReportPage);
+hrRoute.get('/user-report', hrCtlr.userReportPage);
+hrRoute.get('/leave-report', hrCtlr.leaveReportPage);
+hrRoute.get('/payslip-report', hrCtlr.payslipReportPage);
+hrRoute.get('/payslip-report', hrCtlr.payslipReportPage);
+hrRoute.get('/employee-report', hrCtlr.employeeReportPage);
+hrRoute.get('/profile-settings', hrCtlr.profileSettingsPage);
+hrRoute.get('/security-settings', hrCtlr.securitySettingsPage);
+hrRoute.get('/language-settings', hrCtlr.languageSettingsPage);
+hrRoute.get('/language', hrCtlr.languagePage);
+hrRoute.get('/salary-settings', hrCtlr.salarySettingsPage);
+hrRoute.get('/leave-type', hrCtlr.leaveTypePage);
+hrRoute.get('/payment-gateways', hrCtlr.paymentGatewaysPage);
+hrRoute.get('/tax-rates', hrCtlr.taxRatesPage);
+hrRoute.get('/profile', hrCtlr.profilePage);
+hrRoute.get('/pricing', hrCtlr.pricingPage);
+hrRoute.get('/coming-soon', hrCtlr.comingSoonPage);
 
 export default hrRoute;
