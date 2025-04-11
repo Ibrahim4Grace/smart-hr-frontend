@@ -4,7 +4,7 @@ import * as adminCtlr from '../controllers/adminController.js';
 
 const adminRoute = Router();
 
-adminRoute.get('/dashboard', adminCtlr.adminIndexPage);
+adminRoute.get('/index', adminCtlr.adminIndexPage);
 adminRoute.get('/companies', adminCtlr.companiesPage);
 adminRoute.get('/subscription', adminCtlr.subscriptionsPage);
 adminRoute.get('/packages', adminCtlr.packagesPage);

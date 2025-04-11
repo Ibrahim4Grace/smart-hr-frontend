@@ -1,5 +1,5 @@
 export const adminIndexPage = (req, res) => {
-    res.render('admin/dashboard');
+    res.render('admin/index');
 };
 export const companiesPage = (req, res) => {
     res.render('admin/companies');

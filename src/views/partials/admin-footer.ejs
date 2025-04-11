@@ -1,3 +1,44 @@
+
+    
+    <div id="statusMessage"></div>  
+    <script>
+        document.getElementById("years").textContent = new Date().getFullYear();
+        </script>
+         <script>
+            // Get the status message element
+            const statusMessage = document.getElementById('statusMessage');
+        
+            // Function to show status message
+            function showStatus(message, isOnline) {
+                statusMessage.textContent = message;
+                statusMessage.className = isOnline ? 'online' : '';
+                statusMessage.style.display = 'block';
+                setTimeout(() => {
+                    statusMessage.style.display = 'none';
+                }, 5000);
+            }
+        
+            function checkInitialConnection() {
+                if (navigator.onLine) {
+                    showStatus('You are online!', true);
+                } else {
+                    showStatus('No internet connection. Please check your network.', false);
+                }
+            }
+        
+    
+            window.addEventListener('online', () => {
+                showStatus('Internet connection restored!', true);
+            });
+        
+            window.addEventListener('offline', () => {
+                showStatus('No internet connection. Please check your network.', false);
+            });
+        
+            window.onload = checkInitialConnection;
+        </script>
+        
+        
     <!-- jQuery -->
     <script src="../assets/js/jquery-3.7.1.min.js"></script>
 
@@ -13,12 +54,6 @@
     <!-- Sweetalert 2 -->
     <script src="../assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
     <script src="../assets/plugins/sweetalert/sweetalerts.min.js"></script>
-    
-          
-    <script>
-        document.getElementById("years").textContent = new Date().getFullYear();
-        </script>
-    
 
     <!-- Datatable JS -->
     <script src="../assets/js/jquery.dataTables.min.js"></script>

@@ -1,3 +1,45 @@
+
+    
+
+          
+    <script>
+        document.getElementById("years").textContent = new Date().getFullYear();
+    </script>
+        <div id="statusMessage"></div>  
+    <script>
+        // Get the status message element
+        const statusMessage = document.getElementById('statusMessage');
+    
+        // Function to show status message
+        function showStatus(message, isOnline) {
+            statusMessage.textContent = message;
+            statusMessage.className = isOnline ? 'online' : '';
+            statusMessage.style.display = 'block';
+            setTimeout(() => {
+                statusMessage.style.display = 'none';
+            }, 5000);
+        }
+    
+        function checkInitialConnection() {
+            if (navigator.onLine) {
+                showStatus('You are online!', true);
+            } else {
+                showStatus('No internet connection. Please check your network.', false);
+            }
+        }
+    
+
+        window.addEventListener('online', () => {
+            showStatus('Internet connection restored!', true);
+        });
+    
+        window.addEventListener('offline', () => {
+            showStatus('No internet connection. Please check your network.', false);
+        });
+    
+        window.onload = checkInitialConnection;
+    </script>
+    
     <!-- jQuery -->
     <script src="../assets/js/jquery-3.7.1.min.js"></script>
 
@@ -13,30 +55,12 @@
     <!-- Sweetalert 2 -->
     <script src="../assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
     <script src="../assets/plugins/sweetalert/sweetalerts.min.js"></script>
-    
-    <title>Smart-HR</title>
-          
-    <script>
-        document.getElementById("years").textContent = new Date().getFullYear();
-        </script>
-    
-    
-    
-    
     <!-- Datatable JS -->
     <script src="../assets/js/jquery.dataTables.min.js"></script>
     <script src="../assets/js/dataTables.bootstrap5.min.js"></script>
-    
-    
-    
-    
-    
+
     <!-- Bootstrap Core JS -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    
-    
-    
-    
     
     <!-- Sticky Sidebar JS -->
     <script src="../assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
@@ -63,29 +87,15 @@
     <!-- Daterangepikcer JS -->
     <script src="../assets/js/moment.min.js"></script>
     <script src="../assets/plugins/daterangepicker/daterangepicker.js"></script>
-    
-    
-    
-    
-    
+
     <!-- Chart JS -->
     <script src="../assets/plugins/toastr/toastr.min.js"></script>
     <script src="../assets/plugins/toastr/toastr.js"></script>
-    
-    
-    
-    
-    
-    
-    
+
     <!-- Chart JS -->
     <script src="../assets/plugins/apexchart/apexcharts.min.js"></script>
     <script src="../assets/plugins/apexchart/chart-data.js"></script>
-    
-    
-    
-    
-    
+
     <!-- Stickynote JS -->
     <script src="../assets/js/jquery-ui.min.js"></script>
     <script src="../assets/plugins/stickynote/sticky.js"></script>
@@ -94,48 +104,25 @@
     
     <!-- Summernote JS -->
     <script src="../assets/plugins/summernote/summernote-bs4.min.js"></script>
-    
-    
-    
-    
-    
-    
+
     <!-- Chart JS -->
     <script src="../assets/plugins/chartjs/chart.min.js"></script>
     <script src="../assets/plugins/chartjs/chart-data.js"></script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     <!-- Owl Carousel JS -->
     <script src="../assets/js/owl.carousel.min.js"></script>
-    
-    
-    
+
     <!-- Swiper JS -->
     <script src="../assets/plugins/swiper/swiper-bundle.min.js"></script>
     <script src="../assets/plugins/%40simonwep/pickr/pickr.min.js"></script>
-    
-    
-    
+
     <script src="../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
     <script src="../assets/plugins/jquery-timepicker/jquery-timepicker.js"></script>
     <script src="../assets/plugins/pickr/pickr.js"></script>
-    
-    
-    
-    
-    
+
     <!-- Internal Swiper JS -->
     <script src="../assets/js/swiper.js"></script>
-    
-    
-    
+
     <!-- Fullcalendar JS -->
     <script src="../assets/plugins/fullcalendar/index.global.min.js"></script>
     <script src="../assets/plugins/fullcalendar/calendar-data.js"></script>
@@ -159,22 +146,10 @@
     <script src="../assets/js/invoice.js"></script>
     <script src="../assets/js/leads.js"></script>
     <script src="../assets/js/add-comments.js"></script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     <!-- Custom JS -->
     <script src="../assets/js/circle-progress.js"></script>
     <script src="../assets/js/theme-colorpicker.js"></script>
     <script src="../assets/js/script.js"></script>
-    
-    
-    
-      
-    
+
     </body></html>

@@ -83,4 +83,11 @@ hrRoute.get('/profile', hrCtlr.profilePage);
 hrRoute.get('/pricing', hrCtlr.pricingPage);
 hrRoute.get('/coming-soon', hrCtlr.comingSoonPage);
 
+hrRoute.get('/under-maintenance', hrCtlr.underMaintenancePage);
+hrRoute.get('/under-construction', hrCtlr.underConstructionPage);
+hrRoute.get('/privacy-policy', hrCtlr.privacyPolicyPage);
+hrRoute.get('/error-404', hrCtlr.error404Page);
+hrRoute.get('/error-500', hrCtlr.error500Page);
+
+
 export default hrRoute;

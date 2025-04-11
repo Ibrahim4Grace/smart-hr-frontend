@@ -250,3 +250,20 @@ export const pricingPage = (req, res) => {
 export const comingSoonPage = (req, res) => {
     res.render('hr/coming-soon');
 };
+
+export const underMaintenancePage = (req, res) => {
+    res.render('hr/under-maintenance');
+};
+
+export const underConstructionPage = (req, res) => {
+    res.render('hr/under-construction');
+};
+export const privacyPolicyPage = (req, res) => {
+    res.render('hr/privacy-policy');
+};
+export const error404Page = (req, res) => {
+    res.render('hr/error-404');
+};
+export const error500Page = (req, res) => {
+    res.render('hr/error-500');
+};
