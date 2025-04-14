@@ -7,11 +7,11 @@ tmp/
 temp/
 .env
 src/ormconfig.ts
-src/public/assets/img/images/*
-!src/public/assets/img/images/.gitkeep
+src/public/assets/img/*
+!src/public/assets/img/
 
-src/public/assets/img/theme/*
-!src/public/assets/img/theme/.gitkeep
+src/public/assets/img/*
+!src/public/assets/img/
 yarn.lock
 build
 dist
