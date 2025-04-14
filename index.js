@@ -1,7 +1,7 @@
 import express from 'express';
+import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import morgan from 'morgan';
-import http from 'http';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -13,9 +13,14 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
+app.use(cookieParser());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.static(path.join(__dirname, '../public')));
 
+
+app.set('views', path.resolve('src/views'));
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'src', 'views')); 
 
 app.use(cors(corsOptions));
 app.use(morgan('tiny'));
