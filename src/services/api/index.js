@@ -5,7 +5,7 @@ import { productsApi } from './products.api';
 // Import other domain-specific API modules
 
 // Set base configuration
-const API_BASE_URL = process.env.API_BASE_URL || 'http://localhost:3000/api';
+const API_BASE_URL = process.env.API_BASE_URL || 'http://localhost:8000/api/v1';
 
 // Configure request defaults
 const getDefaultHeaders = () => {
@@ -14,9 +14,8 @@ const getDefaultHeaders = () => {
   };
   
   const token = localStorage.getItem('auth_token');
-  if (token) {
-    headers['Authorization'] = `Bearer ${token}`;
-  }
+  if (token)  headers['Authorization'] = `Bearer ${token}`;
+  
   
   return headers;
 };
