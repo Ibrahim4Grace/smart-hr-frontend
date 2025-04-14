@@ -9,6 +9,9 @@ temp/
 src/ormconfig.ts
 src/public/assets/img/images/*
 !src/public/assets/img/images/.gitkeep
+
+src/public/assets/img/theme/*
+!src/public/assets/img/theme/.gitkeep
 yarn.lock
 build
 dist
