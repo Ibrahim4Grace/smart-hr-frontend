@@ -15,7 +15,8 @@ const app = express();
 
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, '../public')));
+// app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, 'src', 'public'))); 
 
 
 app.set('views', path.resolve('src/views'));
@@ -26,7 +27,6 @@ app.use(morgan('tiny'));
 app.disable('x-powered-by');
 
 
-app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use(router);
